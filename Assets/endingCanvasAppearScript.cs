@@ -8,6 +8,10 @@ public class endingCanvasAppearScript : MonoBehaviour {
 
 	public GameObject quest1;
 	public GameObject quest2;
+	public GameObject quest3;
+	public GameObject quest4;
+	public GameObject quest5;
+	public GameObject quest6;
 
 	// Use this for initialization
 	void Start () {
@@ -17,7 +21,11 @@ public class endingCanvasAppearScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (quest1.GetComponent<friendScript> ().questComplete == true &&
-		    quest2.GetComponent<friendScript> ().questComplete == true) {
+		    quest2.GetComponent<friendScript> ().questComplete == true &&
+			quest3.GetComponent<friendScript> ().questComplete == true &&
+			quest4.GetComponent<friendScript> ().questComplete == true &&
+			quest5.GetComponent<friendScript> ().questComplete == true &&
+			quest6.GetComponent<friendScript> ().questComplete == true) {
 			endingCanvas.enabled = true;
 		} else {
 			endingCanvas.enabled = false;

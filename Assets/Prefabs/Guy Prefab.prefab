@@ -73,7 +73,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1779564967925608}
   m_LocalRotation: {x: -0, y: 0.2928469, z: -0, w: 0.95615935}
-  m_LocalPosition: {x: 1252.4167, y: 339.33005, z: 2383.0435}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 4.6282063, y: 8.394037, z: 2.000802}
   m_Children: []
   m_Father: {fileID: 4232679794213692}
@@ -86,7 +86,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1777844876125240}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1252.4052, y: -336.3, z: -2450.8406}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4019019801734556}
@@ -101,7 +101,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1479251466936206}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1252.6052, y: 345.15866, z: 2383.2705}
+  m_LocalPosition: {x: 0, y: 6, z: 0}
   m_LocalScale: {x: 5.7965913, y: 4.995017, z: 5.796589}
   m_Children: []
   m_Father: {fileID: 4232679794213692}
@@ -268,9 +268,37 @@ MonoBehaviour:
   as1Pressed: 0
   b1Pressed: 0
   c2Pressed: 0
+  cs2Pressed: 0
+  d2Pressed: 0
+  ds2Pressed: 0
+  e2Pressed: 0
+  f2Pressed: 0
+  fs2Pressed: 0
+  g2Pressed: 0
+  gs2Pressed: 0
+  a2Pressed: 0
+  as2Pressed: 0
+  b2Pressed: 0
+  c3Pressed: 0
   quest1: 0
   quest2: 0
   quest3: 0
+  quest4: 0
+  quest5: 0
+  quest6: 0
+  quest7: 0
+  cInteract: 0
+  csInteract: 0
+  dInteract: 0
+  dsInteract: 0
+  eInteract: 0
+  fInteract: 0
+  fsInteract: 0
+  gInteract: 0
+  gsInteract: 0
+  aInteract: 0
+  asInteract: 0
+  bInteract: 0
   questText: {fileID: 0}
   timerStart: 0
   timer: 0

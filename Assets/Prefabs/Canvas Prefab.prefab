@@ -78,7 +78,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: FUUUUUUUUUUUUUUUCK
+  m_Text: Minor notes are three notes above the name letter of the chord, and major
+    are four notes.
 --- !u!114 &114265416418096216
 MonoBehaviour:
   m_ObjectHideFlags: 1
