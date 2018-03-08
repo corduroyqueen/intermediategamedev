@@ -259,64 +259,16 @@ public class friendScript : MonoBehaviour {
 
 			if (quest4) {
 
-
-
-				if (Input.GetKeyDown (KeyCode.Z) && questEnabled) {
-					c1Pressed = true;
-					keyCheck = true;
-				}
-
-				if (Input.GetKeyDown (KeyCode.X) && c1Pressed) {
-					d1Pressed = true;
-				} else if (Input.anyKeyDown && Input.GetKey(KeyCode.Z) == false && c1Pressed && d1Pressed==false  && ds1Pressed==false && f1Pressed==false && g1Pressed==false && gs1Pressed==false && as1Pressed==false) {
-					QuestFailure ();
-				}
-
-				if (Input.GetKeyDown (KeyCode.D) && d1Pressed) {
-					ds1Pressed = true;
-				} else if (Input.anyKeyDown && Input.GetKey(KeyCode.D) == false && Input.GetKey(KeyCode.X) == false && d1Pressed && ds1Pressed==false && f1Pressed==false && g1Pressed==false && gs1Pressed==false && as1Pressed==false) {
-					Debug.Log ("okay");
-					QuestFailure ();
-				}
-
-				if (Input.GetKeyDown (KeyCode.V) && ds1Pressed) {
-					f1Pressed = true;
-				} else if (Input.anyKeyDown && Input.GetKey(KeyCode.V) == false && Input.GetKey(KeyCode.D) == false && ds1Pressed && f1Pressed==false && g1Pressed==false && gs1Pressed==false && as1Pressed==false) {
-					QuestFailure ();
-				}
-
-				if (Input.GetKeyDown (KeyCode.B) && f1Pressed) {
-					g1Pressed = true;
-				} else if (Input.anyKeyDown && Input.GetKey(KeyCode.B) == false && Input.GetKey(KeyCode.V) == false && f1Pressed && g1Pressed==false && gs1Pressed==false && as1Pressed==false) {
-					QuestFailure ();
-				}
-
-				if (Input.GetKeyDown (KeyCode.H) && g1Pressed) {
-					gs1Pressed = true;
-				} else if (Input.anyKeyDown && Input.GetKey(KeyCode.H) == false && Input.GetKey(KeyCode.B) == false && g1Pressed && gs1Pressed==false && as1Pressed==false) {
-					QuestFailure ();
-				}
-
-				if (Input.GetKeyDown (KeyCode.J) && gs1Pressed) {
+				if (Input.GetKeyDown (KeyCode.Alpha7)) {
 					as1Pressed = true;
-				} else if (Input.anyKeyDown && Input.GetKey(KeyCode.J) == false && Input.GetKey(KeyCode.H) == false && gs1Pressed && as1Pressed==false) {
-					QuestFailure ();
 				}
 
-				if (Input.GetKeyDown (KeyCode.Comma) && as1Pressed) {
-					questTextObj.GetComponent<Text> ().text = "You are incredible.";
-					questComplete = true;
-					questEnabled = false;
-				} else if (Input.anyKeyDown && Input.GetKey(KeyCode.Comma) == false  && Input.GetKey(KeyCode.Q) == false && Input.GetKey(KeyCode.J) == false && as1Pressed) {
-					QuestFailure ();
-				}
 
-				if (Input.GetKeyDown (KeyCode.Q) && as1Pressed) {
-					questTextObj.GetComponent<Text> ().text = "You are incredible.";
+
+				if (as1Pressed) {
+					questTextObj.GetComponent<Text> ().text = "That's it!!";
 					questComplete = true;
 					questEnabled = false;
-				} else if (Input.anyKeyDown && Input.GetKey(KeyCode.Q) == false  && Input.GetKey(KeyCode.Comma) == false && Input.GetKey(KeyCode.J) == false && as1Pressed) {
-					QuestFailure ();
 				}
 
 
@@ -325,16 +277,29 @@ public class friendScript : MonoBehaviour {
 
 			if (quest5) {
 
-				if (CheckC() && CheckF() && CheckA() && keyCheck) {
+				if (Input.GetKeyDown (KeyCode.D) || Input.GetKeyDown (KeyCode.Alpha3)) {
+					ds1Pressed = true;
+				}
+
+				if (Input.GetKeyDown (KeyCode.G) || Input.GetKeyDown (KeyCode.Alpha5)) {
+					fs1Pressed = true;
+				}
+
+				if (Input.GetKeyDown (KeyCode.H) || Input.GetKeyDown (KeyCode.Alpha6)) {
+					gs1Pressed = true;
+				}
+
+				if (Input.GetKeyDown (KeyCode.N) || Input.GetKeyDown (KeyCode.Y)) {
+					a1Pressed = true;
+				}
+
+
+				if (ds1Pressed && fs1Pressed && gs1Pressed && a1Pressed && questEnabled) {
 					questTextObj.GetComponent<Text> ().text = "Damn! That was impressive.";
 					questComplete = true;
 					questEnabled = false;
 				}
 
-				if (CheckC() && CheckE() && CheckG() && questEnabled) {
-					cInteract = true;
-					keyCheck = true;
-				}
 
 
 
